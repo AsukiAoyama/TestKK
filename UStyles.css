@@ -291,7 +291,7 @@ body{
         font-weight: bolder;
         position:absolute;
         text-align:center;
-        height:100vh;
+        height:100%;
         left:-51vw;
         width:50vw;
         z-index:100;
