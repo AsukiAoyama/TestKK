@@ -1,0 +1,368 @@
+/*****************************************Variables************************************************/ 
+:root {
+    --body-background-color: #fff;
+    --bar-background-color: #fff;
+    --Container-font-color:#fff;
+    --border-color:#00000033;
+    --bar-font-color:#000;
+    
+    --Button-A:100px;
+    --Container-Width:50%;
+    --Button-Font-Size:20px;
+    --Name-Font-Size:40px;
+    --State-Font-Size:30px;
+
+    --Open-MenuButton-Width: 50px;
+    --Open-MenuButton-Height: 50px;
+
+    --Menu-Font-Size: 32px;
+
+    --Menu-Icons-Height:32px;
+
+    --Menu-Elements-Height: 100px;
+
+    --Menu-Element1-Distance: 0px;
+    --Menu-Element2-Distance: 101px;
+    --Menu-Element3-Distance: 202px;
+    --Menu-Element4-Distance: 303px;
+    --Menu-Element5-Distance: 404px;
+  }
+
+
+  @media (max-width: 1200px) {
+    :root {
+        --Button-A:200px;
+        --Container-Width:96%;
+        --Button-Font-Size:40px;
+        --Name-Font-Size:60px;
+        --State-Font-Size:40px;
+
+        --OpenMenuButton-Width: 60px;
+        --OpenMenuButton-Height: 60px;
+
+        --Menu-Font-Size:40px; 
+
+        --Menu-Icons-Height:38px;
+
+        --Menu-Elements-Height:120px;
+
+        --Menu-Element1-Distance:0px;
+        --Menu-Element2-Distance:121px;
+        --Menu-Element3-Distance:242px;
+        --Menu-Element4-Distance:363px; 
+        --Menu-Element5-Distance:484px; 
+    }
+  }
+
+
+/*****************************************Background-Color*****************************************/ 
+body{
+    background-color:white;
+    -webkit-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    overflow:hidden;
+    }
+
+/*****************************************Header-Container*****************************************/ 
+.Header-Container{
+    border-bottom: 1px solid #00000033;
+    box-shadow: 0px 5px 5px  #00000033;
+    background-color: white;
+    color: black;
+    position:absolute;
+    height:180px;
+    width:100vw;
+    padding:0px;
+    margin:0px;
+    left:0px;
+    top:0px;     
+    }
+
+.Logo{
+    transform: translate(-50%, -50%);
+    position:absolute;
+    height:80%;
+    left:50%;
+    top:50%;
+    }
+
+.Settings{
+    transform: translateY(-50%);
+    position:absolute;
+    height:74px; display:none;
+    width:74px;
+    left:2%;
+    top:50%;
+    z-index:50;
+    }
+    
+
+/*****************************************Password*************************************************/ 
+.Password-Container{
+    transform:translate(-50%, -50%);
+    background-color:white;
+    position:absolute;
+    text-align:center;
+    height:30vw;
+    width:30vw;
+    z-index:10;
+    left:50%;
+    top:50%;
+    }
+
+.LogInHeading{
+    transform:translate(-50%);
+    font-family:'Arial';
+    position:absolute;
+    text-align:center;
+    font-weight:100;
+    font-size:60px;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    left:50%;
+    top:1%;
+    }
+
+.Password-Input{
+    transform:translate(-50%, -50%);
+    border: 2px solid black;
+    text-align:center;
+    position:absolute;
+    width:calc(25vw);
+    font-size:60px;
+    padding:0px;
+    margin:0px;
+    left:50%;
+    top:50%;
+    }
+
+.Password-Submit{
+    transform:translateX(-50%);
+    border: 2px solid black;
+    background-color: #fff;
+    font-family:'Arial';
+    position:absolute;
+    text-align:center;
+    font-size:40px;
+    padding:3px;
+    margin:0px;
+    bottom:0%;
+    left:50%;
+    }
+
+/*****************************************Main-Containers******************************************/ 
+.Mode-Container{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--Container-font-color);
+    transform: translate(-50%, 10%);
+    width:var(--Container-Width);
+    background-color:#4169E1;
+    border-radius:20px;
+    position:absolute;
+    font-weight:bold;
+    display:none; 
+    height:10vh;
+    top:180px;
+    left:50%;  
+    }
+
+.Relay-Container-1{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--Container-font-color);
+    transform:translate(-50%, 10%);
+    background-color:#4169E1;
+    border-radius:20px;
+    position:absolute;
+    height:calc(15vh);
+    font-weight:bold;
+    display:block; 
+    width:100%;
+    top:100%;
+    left:50%;   
+    }
+
+.Relay-Container-2{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:var(--Container-font-color);
+    transform:translateX(-50%);
+    background-color:#4169E1;
+    border-radius:20px;
+    position:absolute; display:block;
+    font-weight:bold;
+    height:100%;
+    width:100%;
+    top:110%;
+    left:50%;     
+    }
+
+.Name{
+    font-size:var(--Name-Font-Size);
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    bottom:50%;
+    left:20px;
+    }
+
+.State{
+    font-size:var(--State-Font-Size);
+    position:absolute;
+    padding:0px;
+    margin:0px;
+    bottom:20%;
+    top:110%;
+    left:0px;
+    }
+
+.Mode{
+    transform: translate(-50%, -50%);
+    font-size:var(--Name-Font-Size);
+    position:absolute;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    left:50%;
+    top:50%;
+    }
+    
+.buttons{
+    font-size:var(--Button-Font-Size);
+    transform:translateY(-50%);
+    height: var(--Button-A);
+    background-color:#fff;
+    width: var(--Button-A); 
+    position:absolute;
+    border-radius:50%;
+    font-weight:bold;
+    color:#4169E1;
+    border:0px;
+    right:20px;
+    top:50%;
+    }
+
+.button1{
+    display:block;  
+    }
+
+.button2{
+    display:block;  
+    }
+
+.button3{
+    display:none;   
+    }
+
+.button4{
+    display:none;  
+    }
+
+/*****************************************Copyright************************************************/ 
+.Copyright {
+    background-color:white;
+    border-top: 1px solid   #00000033;
+    box-shadow: 0px 5px 5px  #00000033;
+    color: black;
+    transform: translateX(-50%);
+    font-family:'Arial';
+    font-weight:bolder;
+    position:absolute;
+    text-align:center;
+    font-size:25px;
+    padding:10px;
+    width:100vw;
+    z-index:10;
+    margin:0px;
+    bottom:0%;    
+    left:50%;
+    }
+
+
+    .Container-Menu{
+        font-family:Arial, Helvetica, sans-serif;
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+        transition: left 1s ease-in-out;
+        transform: translateY(-50%);
+        color:rgba(0, 0, 0, 1);
+        background-color:white;
+        font-weight: bolder;
+        position:absolute;
+        text-align:center;
+        height:100vh;
+        left:-51vw;
+        width:50vw;
+        z-index:100;
+        top:50%;
+        }
+    
+    .Menu-Elements{
+        border-bottom : 1px solid rgba(0, 0, 0, 0.2);
+        height:var(--Menu-Elements-Height);
+        background-color:white;
+        position:absolute;
+        cursor:pointer;
+        width:100%;
+        z-index:10;
+        left:0%;
+        top:0; 
+        }
+    
+    .Menu-Elements > h1{
+        transform: translate(-50%, -50%);
+        font-size:var(--Menu-Font-Size);
+        position:absolute;
+        opacity:0.5;
+        padding:0px;
+        margin:0px;
+        width:100%;
+        left:50%;
+        top:50%;
+        }
+  
+    #Menu-Element-1{
+        top:var(--Menu-Element1-Distance);
+        }
+    
+    #Menu-Element-2{
+        top:var(--Menu-Element2-Distance); 
+        }
+    
+    #Menu-Element-3{
+        top:var(--Menu-Element3-Distance);
+        }
+    
+    #Menu-Element-4{
+        top:var(--Menu-Element4-Distance); 
+        }
+
+        #Menu-Element-5{
+            top:var(--Menu-Element5-Distance); 
+            }
+
+            .CloseMenuButton {
+                position:absolute;
+                cursor:pointer;
+                opacity: 0.5;
+                height:100px;
+                width:100px;
+                z-index:11;
+                padding:0;
+                margin:0;
+                right:0;
+                top:0;
+                }
+            
+            .CloseMenuButton > img {
+                position: absolute;
+                padding-left:0px;
+                text-align:left;
+                height:25px;
+                margin:10px;
+                width:25px;
+                z-index:11;
+                right:0;
+                top:0;
+                }
